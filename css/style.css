@@ -1,118 +1,249 @@
 /* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  /* Custom Fonts
+/* Custom Fonts
   "Krona One"
   "Ysabeau Infant"
   "Sree Krushnadevaraya"
   "Meera Inimai" */
 
-  /* Corpo e fundo da página */
-  body {
-    font-family: "Sree Krushnadevaraya", sans-serif;
-    background-color: #2b2d42;
-    color: white;
-    line-height: 1.6;
-  }
+/* Corpo e fundo da página */
+body {
+  font-family: "Sree Krushnadevaraya", sans-serif;
+  background-color: #2b2d42;
+  color: white;
+  line-height: 1.6;
+}
 
-  /* Estilo do header */
-  header {
-    background-color: #2b2d42;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    font-family: "Meera Inimai", serif;
-  }
+/* Estilo do header */
+header {
+  background-color: #2b2d42;
+  color: white;
+  text-align: center;
+  padding: 5px 0; /* Reduzindo o padding para diminuir a altura */
+  font-family: "Meera Inimai", serif;
+  font-size: 1.5em; /* Reduzi um pouco o tamanho da fonte */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 3px solid #007BFF; /* Linha separadora um pouco mais fina */
+}
 
-  .header-logo .logo{
-    width: 30rem;
-    height: 10rem;
-    align-items: center;
-  }
+.header-logo .logo {
+  width: 15rem;
+  height: 5rem;
+  align-items: top;
+  justify-content: top;
+}
 
-  header h1 {
-    font-size: 2.5em;
-  }
+header h1 {
+  font-size: 2.5em;
+}
 
-  header p{
-    font-family: "Meera Inimai", serif;
-  }
+header p {
+  font-family: "Meera Inimai", serif;
+}
 
-  header nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-  }
+header nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-  header nav a:hover {
-    text-decoration: underline;
-  }
+header nav a:hover {
+  text-decoration: underline;
+}
 
-  /* Estilo das seções */
-  section {
-    padding: 60px 20px;
-    margin: 40px 0;
-    background-color: #ffffff;
-  }
+/* Adiciona espaçamento no corpo para não ficar coberto pelo header fixo */
+body {
+  padding-top: 170px; /* Ajuste esse valor conforme a altura do header */
+}
 
-  section h2 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
-    font-family: "Krona One", serif;
-    text-align: center;
-  }
+/* Estilo das seções */
+section {
+  padding: 60px 20px;
+  margin: 40px 0;
+  background-color: #ffffff;
+}
 
-  section p {
-    font-size: 1.6em;
-    line-height: 1.8;
-    font-family: "Sree Krushnadevaraya", serif;
-  }
+section h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  font-family: "Krona One", serif;
+  text-align: center;
+}
 
-  /* Seções específicas */
-  #introducao {
-    background-color: #2b2d42;
-  }
+section p {
+  font-size: 1.6em;
+  line-height: 1.8;
+  font-family: "Sree Krushnadevaraya", serif;
+}
 
-  #quem-somos {
-    background-color: #8d99ae;
-    color: white;
-  }
+/* Seções específicas */
+#introducao {
+  background-color: #2b2d42;
+  padding: 0px 160px;
+}
 
-  #projetos {
-    background-color: #2b2d42;
-    color: white;
-  }
+#quem-somos {
+  background-color: #8d99ae;
+  color: white;
+  padding: 30px 160px;
+}
 
-  #contato {
-    background-color: #8d99ae;
-  }
+#projetos {
+  background-color: #2b2d42;
+  color: white;
+}
 
-  /* Rodapé */
-  footer {
-    background-color: #2b2d42;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 40px;
-  }
-  
-  /* Adicionando um pouco de espaçamento nas imagens e vídeos */
-  
-.introducao .intro-img{
-    justify-content: center;
-    align-items: center;
+#projetos .projetos-desc{
+  padding: 30px 160px;
+  text-align: center;
+}
 
-  }
 
-  .img, video {
-    margin-left: 50px;
-    max-width: 70%;
-    height: 70%;
-    align-items: center;
-    justify-content: center;
-  }
+#contato {
+  background-color: #8d99ae;
+  padding: 30px 160px;
+}
+
+/* Rodapé */
+footer {
+  background-color: #2b2d42;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 40px;
+}
+
+/* Adicionando um pouco de espaçamento nas imagens e vídeos */
+
+#introducao .intro-img {
+  display: flex;
+  justify-content: center; /* eixo - X */
+  padding: 50px;
+
+}
+
+.img,
+video {
+  display: flex;
+  max-width: 70%;
+  height: 70%;
+}
+
+.projetos-div {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px; /* Espaço entre os elementos */
+  text-align: center;
+  padding: 50px;
+}
+
+.projetos-img {
+  font-size: 0.9em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 420px; /* Tamanho médio ajustável */
+}
+
+.projetos-img img {
+  width: 100%;
+  max-width: 200%; /* Controle do tamanho da imagem */
+  height: auto;
+  border-radius: 10px; /* Bordas arredondadas para um design mais moderno */
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Efeito de sombra leve */
+}
+
+.quem-somos-img {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  width: 70%;
+  padding: 50px;
+  margin: 0 auto; /* Mantém o bloco centralizado */
+  overflow: hidden; /* Garante que a parte cortada não fique visível */
+}
+
+.quem-somos-img img {
+  display: block;
+  max-width: 100%;
+  height: 500px; /* Ajuste a altura conforme necessário */
+  object-fit: cover; /* Corta a imagem para preencher o espaço */
+  object-position: center; /* Mantém a parte superior cortada */
+  width: 100%;
+}
+
+#contato p{
+  text-align: center;
+  font-size: 1.6em;
+}
+
+
+.contato-ul{
+  font-size: 1.3em;
+  line-height: 1.2;
+  padding: 30px;
+  color: white;
+  font-family: "Sree Krushnadevaraya", serif;
+  text-align: center;
+  list-style: none;
+}
+
+
+
+.form-box {
+  background-color: #2b2d42; /* Cor de fundo cinza */
+  padding: 20px;
+  width: 100%;
+  max-width: 400px; /* Tamanho da box */
+  margin: 40px auto; /* Centraliza a box */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+}
+
+.form-box h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.form-box label {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.form-box input,
+.form-box textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #2b2d42;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.form-box button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #007BFF;
+  color: #2b2d42;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form-box button:hover {
+  background-color: #0056b3;
+}

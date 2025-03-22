@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechNova - Transformando o Futuro da Tecnologia</title>
+    <link rel="shorcut icon" href="pngs/TechNova logo Mini.png" type="image/x-icon">
 
     <!-- Fontes Google -->
     <style>
@@ -61,19 +62,37 @@
             desenvolvedores, designers, engenheiros e profissionais visionários que buscam sempre as melhores soluções
             para os nossos clientes. Com um compromisso com a excelência e inovação, buscamos sempre levar nossos
             clientes ao próximo nível.</p>
+
+            <div class="quem-somos-img">
+
+                <img src="pngs/Escritorio.jfif" alt="" class="img">
+    
+            </div>
     </section>
 
     <!-- Seção de Projetos -->
     <section id="projetos" data-aos="zoom-in">
         <h2>Projetos</h2>
-        <p>Na TechNova, trabalhamos em projetos desafiadores e inovadores, incluindo o desenvolvimento de software,
+        <p class="projetos-desc">Na TechNova, trabalhamos em projetos desafiadores e inovadores, incluindo o desenvolvimento de software,
             sistemas de automação e soluções de inteligência artificial. Alguns dos nossos projetos incluem:</p>
-        <ul>
-            <li>Automatização de processos empresariais</li>
-            <li>Plataformas de e-commerce personalizadas</li>
-            <li>Soluções em cloud computing</li>
-            <li>Implementação de IA para análise de dados</li>
-        </ul>
+            <div class="projetos-div">
+                <div class="projetos-img">
+                    <p>Automatização de processos empresariais</p>
+                    <img src="pngs/Criando AI.jfif" alt="Automatização de processos empresariais" class="img">
+                </div>
+                <div class="projetos-img">
+                    <p>Plataformas de e-commerce personalizadas</p>
+                    <img src="pngs/ecommerce.jfif" alt="Plataformas de e-commerce personalizadas" class="img">
+                </div>
+                <div class="projetos-img">
+                    <p>Soluções em cloud computing</p>
+                    <img src="pngs/cloud computing.jfif" alt="Soluções em cloud computing" class="img">
+                </div>
+                <div class="projetos-img">
+                    <p>Implementação de IA para análise de dados</p>
+                    <img src="pngs/Implementando AI.jfif" alt="Implementação de IA para análise de dados" class="img">
+                </div>
+            </div>
     </section>
 
     <!-- Seção de Contato -->
@@ -81,11 +100,29 @@
         <h2>Contato</h2>
         <p>Fale conosco para discutir como podemos ajudar seu negócio a crescer. Entre em contato por meio dos seguintes
             canais:</p>
-        <ul>
+        <ul class="contato-ul">
             <li>Email: contato@technova.com</li>
             <li>Telefone: +55 (11) 1234-5678</li>
             <li>Endereço: Rua das Inovações, 123, São Paulo, SP</li>
         </ul>
+
+        <div class="form-box">
+            <form action="https://formspree.io/f/xyzewkob" method="POST">
+              <h2>Entre em Contato</h2>
+              
+              <label for="name">Nome:</label>
+              <input type="text" id="name" name="name" required>
+              
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" required>
+              
+              <label for="message">Mensagem:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+              
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+
     </section>
 
     <!-- Rodapé -->
